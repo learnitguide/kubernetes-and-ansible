@@ -1,0 +1,31 @@
+---
+- hosts: all
+
+  vars:
+   packages:
+   - docker*
+   - kubeadm
+   - kubectl
+   - kubelet
+
+  tasks:
+  - name: Removing Repo File of Kubernetes.
+    file:
+     path: /etc/yum.repos.d/kubernetes.repo
+     state: absent
+
+  - name: Uninstalling kubernetes related packages
+    yum:
+     name: "{{ item }}"
+     state: absent
+    with_items: "{{ packages }}"
+
+  - name: Removing required files
+    file:
+     path: "{{ item }}"
+     state: absent
+    with_items:
+    - /etc/kubernetes/
+    - /var/lib/etcd/
+    - $HOME/.kube/
+

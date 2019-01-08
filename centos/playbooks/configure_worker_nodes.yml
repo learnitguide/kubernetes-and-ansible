@@ -1,0 +1,11 @@
+---
+- hosts: kubernetes-worker-nodes
+  vars_files:
+  - env_variables
+  tasks:
+  - name: Copying token to worker nodes
+    copy: src={{ token_file }} dest=join_token
+
+  - name: Joining worker nodes with kubernetes master
+    shell: "`grep -i 'kubeadm join' join_token`"
+
