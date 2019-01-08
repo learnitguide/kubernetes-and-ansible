@@ -1,18 +1,18 @@
 #Edit these values only as per your environment
 #Enter your master node hostname and ip address
-master_node: kubernetes-master
-master_ip: 192.168.2.1
+master_node: master1.learnitguide.net
+master_ip: 10.10.10.1
 
 #Enter your master node advertise ip address and cidr range for the pods.
-ad_addr: 192.168.2.1
+ad_addr: 10.10.10.1
 cidr_v: 172.16.0.0/16
 
 #Enter your worker nodes hostname and ip address respectively.
-worker_node1: kubernetes-worker1
-worker_node2: kubernetes-worker2
+worker_node1: worker1.learnitguide.net
+worker_node2: worker2.learnitguide.net
 
-worker_ip1: 192.168.2.2
-worker_ip2: 192.168.2.3
+worker_ip1: 10.10.10.2
+worker_ip2: 10.10.10.3
 
 
 # Dont Edit these below values, these are mandator to configure kubernetes cluster
