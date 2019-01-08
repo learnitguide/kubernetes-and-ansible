@@ -6,23 +6,27 @@ How to use this (Setup Instructions)
 1. Make your servers ready (one master node and two worker nodes).
 2. All nodes must be reachable between master and worker nodes.
 3. Internet connection must be enabled in all nodes, required packages will be downloaded from kubernetes official yum repository.
-4. Make your host entry in file "hosts" available in "centos" directory.
-5. Provide your server details in "env_variables" available in "centos" directory.
-6. Deploy the ssh key from master node to other nodes for password less authentication.
+4. Clone this repository into your master node.
+   
+   git clone https://github.com/learnitguide/kubernetes-and-ansible.git
+   
+5. Make your host entry in file "hosts" available in "centos" directory.
+6. Provide your server details in "env_variables" available in "centos" directory.
+7. Deploy the ssh key from master node to other nodes for password less authentication.
 
    ssh-keygen
    
    Copy the public key to all nodes including your master node and make sure you are able to login into any nodes without password.
    
-7. Run "settingup_kubernetes_cluster.yml" playbook to setup all nodes and kubernetes master configuration.
+8. Run "settingup_kubernetes_cluster.yml" playbook to setup all nodes and kubernetes master configuration.
 
    ansible-playbook settingup_kubernetes_cluster.yml
    
-8. Run "join_kubernetes_workers_nodes.yml" playbook to join the worker nodes with kubernetes master node once "settingup_kubernetes_cluster.yml" playbook tasks are completed.
+9. Run "join_kubernetes_workers_nodes.yml" playbook to join the worker nodes with kubernetes master node once "settingup_kubernetes_cluster.yml" playbook tasks are completed.
 
    ansible-playbook join_kubernetes_workers_nodes.yml
 
-9. Verify the configuration from master node.
+10. Verify the configuration from master node.
 
    kubectl get nodes
 
