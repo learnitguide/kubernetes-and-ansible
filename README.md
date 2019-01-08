@@ -1,9 +1,9 @@
 # kubernetes-and-ansible
-This repository has set of ansible playbooks created to setup a kubernetes cluster fully automated with one master and many worker nodes. This will work on physical servers, virtual machines, aws cloud, google cloud or any other cloud servers. This has been tested and verified on Centos 7.3 64 bit operating systems.
+This repository has set of ansible playbooks created to setup a kubernetes cluster fully automated with one master and two worker nodes. This will work on physical servers, virtual machines, aws cloud, google cloud or any other cloud servers. This has been tested and verified on Centos 7.3 64 bit operating systems.
 
 How to use this (Setup Instructions)
 
-1. Make your servers ready (one master node and any number of worker nodes).
+1. Make your servers ready (one master node and two worker nodes).
 2. All nodes must be reachable between master and worker nodes.
 3. Internet connection must be enabled in all nodes, required packages will be downloaded from kubernetes official yum repository.
 4. Make your host entry in file "hosts" available in "centos" directory.
