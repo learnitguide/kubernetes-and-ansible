@@ -19,7 +19,7 @@ How to use this (Setup Instructions)
 
 6. There is a file "hosts" available in "centos" directory, Just make your entries of your all kubernetes nodes. 
 7. Provide your server details in "env_variables" available in "centos" directory.
-8. Optional: Deploy the ssh key from master node to other nodes for password less authentication. This is optional, it is required only if you want password less authentication else use --ask-pass while running the playbooks to enter the password of servers manually.
+8. Deploy the ssh key from master node to other nodes for password less authentication.
 
    ssh-keygen
    
