@@ -12,11 +12,4 @@
      regexp: '(.*swap*)'
      replace: '#\1'
 
-  - name: Adding Kubernetes Hosts Entries
-    blockinfile:
-     path: /etc/hosts
-     insertafter: EOF
-     block: |
-      {{ master_ip }} {{ master_node }}
-      {{ worker_ip1 }} {{ worker_node1 }}
-      {{ worker_ip2 }} {{ worker_node2 }}
+  
