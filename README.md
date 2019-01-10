@@ -5,13 +5,7 @@ How to use this (Setup Instructions)
 ####################################
 
 1. Make your servers ready (one master node and multiple worker nodes).
-2. Make an entry of your each hosts in /etc/hosts file for name resolution like this.
-
-cat /etc/hosts
-192.168.2.1 kubernetes-master.learnitguide.net kubernetes-master
-192.168.2.2 kubernetes-worker1.learnitguide.net kubernetes-worker1
-192.168.2.3 kubernetes-worker2.learnitguide.net kubernetes-worker2
-
+2. Make an entry of your each hosts in /etc/hosts file for name resolution.
 3. Make sure kubernetes master node and other worker nodes are reachable between each other.
 
 4. Internet connection must be enabled in all nodes, required packages will be downloaded from kubernetes official yum repository.
