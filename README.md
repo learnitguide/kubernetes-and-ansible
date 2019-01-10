@@ -13,9 +13,13 @@ How to use this (Setup Instructions)
    
    git clone https://github.com/learnitguide/kubernetes-and-ansible.git
    
-6. Make your host entry in file "hosts" available in "centos" directory.
+   once it is cloned, get into the directory
+   
+   cd kubernetes-and-ansible/centos
+
+6. There is a file "hosts" available in "centos" directory, Just make your entries of your all kubernetes nodes. 
 7. Provide your server details in "env_variables" available in "centos" directory.
-8. Deploy the ssh key from master node to other nodes for password less authentication.
+8. Optional: Deploy the ssh key from master node to other nodes for password less authentication. This is optional, it is required only if you want password less authentication else use --ask-pass while running the playbooks to enter the password of servers manually.
 
    ssh-keygen
    
