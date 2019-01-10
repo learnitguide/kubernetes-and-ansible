@@ -1,20 +1,9 @@
 #Edit these values only as per your environment
-#Enter your master node hostname and ip address
-master_node: kubernetes-master.learnitguide.net
-master_ip: 192.168.2.1
-
 #Enter your master node advertise ip address and cidr range for the pods.
 ad_addr: 192.168.2.1
 cidr_v: 172.16.0.0/16
 
-#Enter your worker nodes hostname and ip address respectively.
-worker_node1: kubernetes-worker1.learnitguide.net
-worker_node2: kubernetes-worker2.learnitguide.net
-
-worker_ip1: 192.168.2.2
-worker_ip2: 192.168.2.3
-
-
+###################################################################################
 # Dont Edit these below values, these are mandatory to configure kubernetes cluster
 packages:
 - docker
@@ -30,3 +19,5 @@ ports:
 - "10250/tcp"
 
 token_file: join_token
+###################################################################################
+# Dont Edit these above values, these are mandatory to configure kubernetes cluster
