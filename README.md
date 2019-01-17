@@ -31,11 +31,11 @@ How to use this (Setup Instructions)
    
 10. Run "join_kubernetes_workers_nodes.yml" playbook to join the worker nodes with kubernetes master node once "settingup_kubernetes_cluster.yml" playbook tasks are completed.
 
-   ansible-playbook join_kubernetes_workers_nodes.yml
+      ansible-playbook join_kubernetes_workers_nodes.yml
 
 11. Verify the configuration from master node.
 
-   kubectl get nodes
+      kubectl get nodes
 
 #################################################################################################################
 Files:
