@@ -2,6 +2,7 @@
 This repository has set of ansible playbooks created to setup a kubernetes cluster fully automated with one master and multiple worker nodes. This will work on physical servers, virtual machines, aws cloud, google cloud or any other cloud servers. This has been tested and verified on Centos 7.3 64 bit operating systems. Also you can refer this link for manual configuration https://www.learnitguide.net/2018/08/install-and-configure-kubernetes-cluster.html
 
 How to use this (Setup Instructions)
+
 ####################################
 
 1. Make your servers ready (one master node and multiple worker nodes).
@@ -38,7 +39,9 @@ How to use this (Setup Instructions)
       kubectl get nodes
 
 #################################################################################################################
+
 Files:
+
 ######
 
 ansible.cfg - Ansible configuration file created locally.
@@ -56,6 +59,7 @@ clear_k8s_setup.yml - Delete entire configurations from all nodes.
 playbooks - Its a directory holds all playbooks.
 
 Who we are?
+
 ###########
 
 We (learnitguide.net) provide you all complete step by step procedures, How to, Installations, configurations, Implementations, documentations, on-line trainings, easy guides on Linux, Cloud Computing, Openstack, Puppet, Chef, Ansible, Devops, Docker, Kubernetes, Linux clusters, VCS Cluster, Virtualizations and other technologies
