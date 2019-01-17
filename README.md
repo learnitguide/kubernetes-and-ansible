@@ -36,7 +36,7 @@ How to use this (Setup Instructions):
 
       kubectl get nodes
 
-Files:
+What are the files this repository has?:
 
 ansible.cfg - Ansible configuration file created locally.
 
@@ -48,7 +48,7 @@ settingup_kubernetes_cluster.yml - Ansible Playbook to perform prerequisites rea
 
 configure_worker_nodes.yml - Ansible Playbook to join worker nodes with master node.
 
-clear_k8s_setup.yml - Delete entire configurations from all nodes.
+clear_k8s_setup.yml - Ansible Playbook helps to delete entire configurations from all nodes.
 
 playbooks - Its a directory holds all playbooks.
 
